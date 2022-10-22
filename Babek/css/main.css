@@ -1,0 +1,491 @@
+@font-face{
+    font-family:'Raleway';
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+body {
+    background: white;
+    color: #3f3f3f;
+    font: 14px / 28px arial;
+    font-family: 'Raleway';  
+}
+h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.sectionHeader {
+    background: LimeGreen;
+    border-bottom: 6px solid ;
+    height: 60px;
+    color: #fff;
+    display: inline-block;
+    line-height: 60px;
+    font-size: 24px;
+    padding: 5px 40px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 16px;
+    color: green;
+    font-weight: bold;
+    transition: all .5s ease;
+}
+.sectionArea {
+    padding: 50px 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+.featuresBody .container {
+    justify-content: space-between;
+}
+.col3 {
+    flex-grow: 1;
+    width: 33.33%;
+}
+
+header .logo {
+    margin-right: auto;
+} 
+header .logo img{
+    display:block;
+    height:90px;
+}
+.menu li{
+    float: left;
+    
+}
+.menu li a{
+    padding: 27px 17px;
+    display: block;
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #333;
+    transition: all .5s ease;
+}
+
+.menu li:hover a{
+    background:LimeGreen;
+    color: #fff;
+    
+}
+#mainSlider {
+    height: 500px;
+    background: url('../image/anasayfa.jpg') center center no-repeat;
+    background-size: cover;
+}
+.slider{
+    width: 100%;
+}
+#mainCaption{
+    height: 500px;
+    background: rgba (0,0,0, .3);
+}
+.caption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+}
+.featuresTop {
+    text-align: center;
+}
+.item{
+    padding: 10px 20px;
+}
+.zoom{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+.zoom img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all .5s ease;
+}
+.item .itemText  {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #500D16;
+}
+.item:hover .zoom img {
+    transform: scale(1.25);
+}
+.item:hover h3{
+    color: LimeGreen;
+}
+.item:hover .itemText{
+    background: green;
+    color: #fff;
+    transition: all .5s ease;
+}
+.btnDetails{
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid black;
+    transition: all .5s ease; 
+}
+.item:hover .btnDetails{
+    color: #fff;
+    border: 1px solid #fff;
+}
+.itemText p{
+    margin: 20px 0;
+}
+footer {
+    background: LimeGreen;
+    text-align: center;
+}
+.footerItem{
+    padding: 20px;
+}
+.footerItem img{
+    height: 150px;
+}
+footer h3{
+    color:#fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+footer .fa{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s ease;
+}
+footer .fa:hover{
+    color:#fff;
+}
+footer p{
+    color: white;
+    line-height: 20px;
+}
+.footerLinks a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    transition: .3s ease;
+    
+}
+.footerLinks a:hover{
+    color: darkblue;
+}
+#inspect{
+    background-color: #f5f5f5;
+}
+.inspectTop{
+    text-align: center;
+}
+
+.inspectBody .col2{
+    display: flex;
+}
+.inspectImage{
+    width:  40%;
+}
+.inspectImage img{
+    width: 100%;
+    height: auto;
+}
+.inspectText{
+    width: 60%;
+    padding-left: 10px;
+}
+h4{
+    color: black;
+    font-size: 15px;
+    font-style: italic;
+}
+#aboutUs{
+    background-color: #f5f5f5;
+}
+.aboutUsTop{
+    text-align: center;
+    background-color: #f5f5f5;
+}
+.aboutUsBody .containerFluid{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+.aboutUsBody .col2{
+    display: flex;
+}
+.aboutUsDate{
+    flex: 1;text-align: center;
+    background-color: green;
+    color:#fff;
+}
+.aboutUsDate p {
+    font-size: 30px;
+    letter-spacing: 2px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.aboutUsImage{
+    flex: 2;
+}
+.aboutUsImage img{
+    width: 100%;
+    height: 100%;
+}
+.aboutUsText{
+    flex: 3;
+    margin-left: 10px;
+}
+.aboutUsText p{
+   position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.teamBody .containerFluid{
+    display: flex;
+    width: 100%;
+}
+.teamMember{
+    position: relative;
+    width: 100%;
+}
+.teamMemberImg{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.teamMemberOverlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    background-color: green;
+    transition: .5s ease;
+}
+.teamMember:hover .teamMemberOverlay{
+    opacity: 0;
+}
+.teamMember:hover .teamMemberInfo{
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.teamTitle{
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.teamMemberInfo{
+    color: #fff;
+    background-color: rgba(13,22,.7);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s ease;
+    padding: 20px;
+    text-align: center;
+    
+}
+.containerr{
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    width: 70%;
+    height: 0;
+    padding-bottom: 40%;
+    background: #f5f5f5;
+    border: solid 10px #32CD32	;
+}
+.slide_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.slide_img img{
+    width: 100%;
+    height: 100%;
+}
+#i1,#i2,#i3,#i4,#i5{
+    display: none;
+}
+.pre,.nxt{
+    width: 12%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(88,88,88,.4);
+    z-index: 99;
+    cursor: pointer;
+}
+.pre{
+    left: 0;
+}
+.nxt{
+    right: 0;
+}
+.nav{
+    width: 100%;
+    height: 11px;
+    bottom: 12%;
+    position: absolute;
+    display: inline-block;
+    font-size: 32px;
+    letter-spacing: 2px;
+    z-index: 99;
+}
+.dots{
+    top: -1px;
+    width: 18px;
+    height: 18px;
+    margin: 0 2px;
+    position: relative;
+    border-radius: 70%;
+    display: inline-block;
+    background: rgba(0,0,0,.6);
+    right: 60%;
+    left: 40%;
+}
+.slide_img {
+    z-index: -1;   
+}
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three,
+#i4:checked ~ #four,
+#i5:checked ~ #five{
+    z-index: 9;
+}
+#i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3,
+#i4:checked ~ .nav #dot4,
+#i5:checked ~ .nav #dot5{
+    background: #fff;
+}
+.contactTop{
+    text-align: center;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 100%;
+}
+.contactForm{
+    margin: 0 auto;
+    width: 20%;
+}
+.formItem{
+    margin-bottom: 25px;
+    width: 100%;
+}
+.formShape{
+    color: #fff;
+    float: left;
+    background-color: #32CD32;
+    padding: 20px;
+    width: 8%;
+    text-align: center;
+}
+.formField{
+    color: #fff;
+    background-color: #ADFF2F;
+    border: none;
+    padding: 15px;
+    width: 80%;
+    display: block;
+    font-size: 14px;
+}
+.formBtn{
+    display: block;
+    border: none;
+    background-color: #32CD32;
+    color: #fff;
+    padding: 12px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+.formBtn:hover{
+    background: #ADFF2F;
+}
+@media screen and (max-width:768px){
+    .caption h1{
+        color: red;
+        font-size: 32px;
+        letter-spacing: 2px;
+        width: 1px;
+    }
+    footer .fa{
+        font-size: 15px;
+        color: yellow;
+    }
+    .footerItem img{
+        font-size: 20px;
+        width:90%;
+    }
+    .itemText{
+        width: 120%;
+    }
+    .zoom{
+        width: 140%;
+    }
+    .aboutUsImage{
+        width: 200%;
+    }
+    .aboutUsBody .containerFluid{
+        font-size: 10px;
+        letter-spacing: 2px;
+        width: 1px;
+    }
+}
+   @media screen and (max-width:540px){
+    .caption h1{
+        color: blue;
+        font-size: 32px;
+        letter-spacing: 2px;
+        width: 1px;
+    }
+     footer .fa{
+        font-size: 15px;
+        color: yellow;
+    }
+    .footerItem img{
+        font-size: 20px;
+        width:90%;
+    }
+    .itemText{
+        width: 120%;
+    }
+    .zoom{
+        width: 140%;
+    }
+    .aboutUsImage{
+        width: 200%;
+    }
+    .aboutUsBody .containerFluid{
+        font-size: 10px;
+        letter-spacing: 2px;
+        width: 1px;
+    }
+}
